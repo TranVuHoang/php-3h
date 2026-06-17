@@ -24,6 +24,52 @@ $colors = [
 echo "<pre>";
 print_r($colors);
 echo "</pre>";
-
 // In ra red
 echo $colors[3];
+
+$hex_colors = [
+  "red" => "#F00",
+  "black" => "#000",
+  "white" => "#FFF",
+];
+echo "<br>";
+echo $hex_colors["red"]; // #F00
+
+$users = [
+  "fullname" => "Hoàng Trần",
+  "age" => 29,
+  "email" => "info@gmail.com",
+];
+
+echo "<pre>";
+print_r($users);
+echo "</pre>";
+
+echo "<hr>";
+echo $users["email"];
+
+//------------------------------------------------
+// Mảng đa chiều
+//------------------------------------------------
+$users = [
+  [
+    "fullname" => "Hoàng Trần",
+    "age" => 29,
+    "email" => "info@gmail.com",
+  ],
+  [
+    "fullname" => "Trang Trang",
+    "age" => 23,
+    "email" => "info@gmail2.com",
+  ],
+  [
+    "fullname" => "Trinh Buôn Gà",
+    "age" => 29,
+    "email" => "info@gmail3.com",
+  ],
+];
+echo "<pre>";
+print_r($users);
+echo "</pre>";
+
+echo $users[1]["fullname"];
